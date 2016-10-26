@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xiangsheng.mynote.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:text="@string/text"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img"
+            android:text="@string/img"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/video" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>

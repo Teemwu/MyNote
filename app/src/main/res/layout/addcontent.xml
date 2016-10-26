@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:id="@+id/et"
+        android:hint="keep something..."/>
+
+    <ImageView
+        android:id="@+id/c_img"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:visibility="gone"/>
+    <VideoView
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:id="@+id/c_video"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save"
+            android:layout_weight="1"
+            android:text="保存"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete"
+            android:layout_weight="1"
+            android:text="取消"/>
+    </LinearLayout>
+</LinearLayout>
